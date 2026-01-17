@@ -6,6 +6,23 @@ A Python-based automated patching tool for enabling raid battles in Dragon Ball 
 
 DBFZ Raid Enabler patches the Dragon Ball FighterZ executable to enable raid events locally, allowing you to access raid battles when official raids are unavailable. Raids can be played with friends online (requires 3 players). The tool features an interactive terminal interface, automatic game detection via Steam, and creates shortcuts in your game folder for easy access.
 
+## Table of Contents
+
+- [Overview](#overview)
+- [Features](#features)
+- [Requirements](#requirements)
+- [Compatibility](#compatibility)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Troubleshooting](#troubleshooting)
+- [How It Works](#how-it-works)
+- [How Patching Works](#how-patching-works)
+- [Logs](#logs)
+- [Building](#building)
+- [Project Structure](#project-structure)
+- [Credits](#credits)
+- [Disclaimer](#disclaimer)
+
 ## Features
 
 - **Automatic Game Detection**: Finds your DBFZ installation through Steam
@@ -60,6 +77,25 @@ Currently tested and working with:
 5. Uninstall EAC (If not already uninstalled)
 6. A shortcut will be created in your game folder for easy access
 7. Launch the game and enjoy the raid battle!
+
+## Troubleshooting
+
+### Desync Issues
+If you're experiencing major desynchronization issues during online play:
+- Ensure EAC (Easy Anti-Cheat) is properly uninstalled
+- Verify that **all players** are using the executable that was patched with this program
+- All players must be on the same patched version to avoid desync
+
+### Other Issues
+If you encounter other problems:
+1. Use the built-in cleanup feature in the program
+   - **Note**: Only use cleanup if you've actually patched the game
+2. Verify the integrity of game files through Steam:
+   - Right-click Dragon Ball FighterZ in Steam
+   - Select Properties → Installed Files → Verify integrity of game files
+3. Re-run the patcher after verification
+
+**Important**: Verifying game file integrity through Steam does **not** delete the files created by this program. That's why there's a built-in cleanup function to properly remove patched files when needed.
 
 ## How It Works
 

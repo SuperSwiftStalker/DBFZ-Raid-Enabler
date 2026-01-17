@@ -10,10 +10,7 @@ a = Analysis(
     ['src\\main.py'],
     pathex=['src'],
     binaries=[],
-    datas=[
-        # Add any data files here if needed
-        # ('icon.ico', '.'),
-    ],
+    datas=[],
     hiddenimports=[
         'win32com.client',
         'win32com.gen_py',
@@ -82,6 +79,4 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
-    # icon='icon.ico',  # Uncomment if you have an icon
-    version_info=None,  # Can add version info here
 )
