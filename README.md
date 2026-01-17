@@ -77,6 +77,12 @@ These patterns and techniques are based on the original C# implementation.
 - All patches are applied to the copy, keeping your game installation safe
 - You can delete the patched executable anytime to return to vanilla gameplay
 
+## Logs
+
+The application creates detailed logs for troubleshooting purposes:
+- **Location**: `%USERPROFILE%\.dbfz_raid_enabler\dbfz_raid.log`
+- **Quick Access**: Press `Win + R`, type `%USERPROFILE%\.dbfz_raid_enabler`, and press Enter
+
 ## Building
 
 To build a standalone executable:
