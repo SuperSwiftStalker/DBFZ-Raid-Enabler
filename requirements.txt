@@ -1,0 +1,13 @@
+# DBFZ Raid Enabler - Python Dependencies
+
+# TUI Framework
+rich==13.7.0
+
+# Windows shortcut creation
+pywin32>=307
+
+# Steam VDF file parsing
+vdf==3.4
+
+# Build tool (6.10.0+ supports Python 3.13)
+pyinstaller>=6.10.0
