@@ -88,6 +88,13 @@ Currently tested and working with:
 
 ## Troubleshooting
 
+### Antivirus False Positives
+Some antivirus software may flag the patched executable or `DBFZ_Raid_Enabler.exe` as suspicious:
+- This is a common false positive for binary patching tools
+- You may need to add an exception for these files in your antivirus software
+- Alternatively, temporarily disable real-time protection while running the patcher
+- The tool is open-source and can be reviewed for safety
+
 ### Desync Issues
 If you're experiencing major desynchronization issues during online play:
 - Ensure EAC (Easy Anti-Cheat) is properly uninstalled
