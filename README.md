@@ -115,12 +115,14 @@ If you encounter other problems:
 
 ## How It Works
 
-The patcher performs three binary modifications to the game executable:
+The patcher performs five binary modifications to the game executable:
 - **Get Raid**: Patches the function that retrieves the current raid index
 - **Set Raid**: Patches the function that sets the active raid
 - **Raid Status**: Bypasses the online raid availability check
+- **FCup Skip**: Prevents FCup popup that can cause softlocks
+- **Partybattle Skip**: Prevents Partybattle popup that can cause softlocks
 
-These patterns and techniques are based on the original C# implementation.
+The core raid patterns are based on the original C# implementation, with additional patches to improve stability.
 
 ## How Patching Works
 

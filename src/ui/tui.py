@@ -78,7 +78,7 @@ class DBFZRaidTUI:
             "[bold cyan]DBFZ Raid Enabler[/bold cyan]\n"
             "[dim]Enable raid battles for Dragon Ball FighterZ[/dim]\n"
             "[dim]Python Edition - Automated Patching System[/dim]\n"
-            "[dim]Version: 1.0.0[/dim]",
+            "[dim]Version: 1.0.1[/dim]",
             box=box.DOUBLE,
             border_style="cyan"
         )
@@ -527,9 +527,11 @@ class DBFZRaidTUI:
             f"[bold green]Patching Complete![/bold green]\n\n"
             f"Raid: [cyan]{raid_name}[/cyan]\n"
             f"Patch Offsets:\n"
-            f"  • Get Raid:    0x{result['offsets'].get('get_raid', 0):X}\n"
-            f"  • Set Raid:    0x{result['offsets'].get('set_raid', 0):X}\n"
-            f"  • Raid Status: 0x{result['offsets'].get('raid_status', 0):X}\n\n"
+            f"  • Get Raid:         0x{result['offsets'].get('get_raid', 0):X}\n"
+            f"  • Set Raid:         0x{result['offsets'].get('set_raid', 0):X}\n"
+            f"  • Raid Status:      0x{result['offsets'].get('raid_status', 0):X}\n"
+            f"  • FCup Skip:        0x{result['offsets'].get('skip_fcup_caller', 0):X}\n"
+            f"  • Partybattle Skip: 0x{result['offsets'].get('skip_partybattle', 0):X}\n\n"
             f"[bold]Launch via shortcut:[/bold] [cyan]{shortcut_name}[/cyan]\n"
             f"[dim]Located in: {game_root}[/dim]",
             box=box.DOUBLE,
